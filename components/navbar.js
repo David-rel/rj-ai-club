@@ -118,19 +118,7 @@ const Navbar = () => {
               </a>
             </Link>
           </div>
-          <div className="-mr-2 flex md:hidden my-2">
-            {path == "/TeamResources/Scouter" ||
-            path == "/TeamResources/Scouter/Scout" ? (
-              <SearchBar />
-            ) : null}
-
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white"
-            >
-              {isMenuOpen ? closeIcon : menuIcon}
-            </button>
-          </div>
+        
         </div>
       </div>
       <Sidebar isOpen={isMenuOpen} close={() => setIsMenuOpen(false)} />
