@@ -125,6 +125,19 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
+    useEffect(() => {
+      const handleResize = () => {
+        if (window.innerWidth > 768) {
+          setIsMenuOpen(false);
+        }
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      // Cleanup event listener on unmount
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
   return (
     <nav className="bg-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
