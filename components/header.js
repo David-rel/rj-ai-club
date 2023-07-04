@@ -30,16 +30,18 @@ const Header = () => {
             height={100}
           />
           <h1 className="text-xl font-bold  sm:block text-white">
-            <Link href="https://www.regisjesuit.com/">RJHS AI Engineering Club</Link>
+            <Link href="https://www.regisjesuit.com/">
+              RJHS AI Engineering Club
+            </Link>
           </h1>
 
-          <p className="ml-4 text-sm hidden md:block text-white">
+          <p className="ml-4 text-sm hidden lg:block text-white">
             <Link href="https://www.google.com/maps/place/6300+S+Lewiston+Way,+Aurora,+CO+80016/@39.6011631,-104.8005882,17z/data=!3m1!4b1!4m5!3m4!1s0x876c88d4a3602fc3:0x4e5549fd92d581c!8m2!3d39.601159!4d-104.7983995">
               6400 S Lewiston Way, Aurora, CO 80016
             </Link>
           </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center hidden md:block">
           {!isLoggedIn ? (
             <Link
               href="/Login"

@@ -1,7 +1,16 @@
 import Sidebar from '@/components/sidebar'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function index() {
+
+    useEffect(() => {
+      if (localStorage.getItem("loggedIn") === "true") {
+      } else {
+        window.location.href = "/Login";
+      }
+    }, []);
+
+    
   return (
     <div>
         <Sidebar />

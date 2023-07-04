@@ -72,12 +72,14 @@ export default function Sidebar() {
           </div>
         )}
         {/* Your sidebar content */}
-        <h1 className="text-xl font-bold p-4 text-white underline">Club Page</h1>
+        <h1 className="text-xl font-bold p-4 text-white underline">
+          Club Page
+        </h1>
         <ul className="list-none text-white">
           <Link href="/clubResources">
             <li className="p-4">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center hover:text-blue-500">
                 <FaDesktop size="1.25em" />
                 <span className="ml-2">Dashboard</span>
               </div>
@@ -85,7 +87,7 @@ export default function Sidebar() {
           </Link>
           <Link href="/clubResources/ideation">
             <li className="p-4">
-              <div className="flex items-center">
+              <div className="flex items-center hover:text-blue-500">
                 <FaCompass size="1.25em" />
                 <span className="ml-2">Ideation</span>
               </div>
@@ -94,7 +96,7 @@ export default function Sidebar() {
           <Link href="/clubResources/teamBoard">
             <li className="p-4">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center hover:text-blue-500">
                 <FaClipboard size="1.25em" />
                 <span className="ml-2">Team Board</span>
               </div>
@@ -103,7 +105,7 @@ export default function Sidebar() {
           <Link href="/clubResources/learning">
             <li className="p-4">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center hover:text-blue-500">
                 <FaCode size="1.25em" />
                 <span className="ml-2">Learning</span>
               </div>
@@ -112,7 +114,7 @@ export default function Sidebar() {
           <Link href="/clubResources/resources">
             <li className="p-4">
               {" "}
-              <div className="flex items-center">
+              <div className="flex items-center hover:text-blue-500">
                 <FaRobot size="1.25em" />
                 <span className="ml-2">Resources</span>
               </div>
