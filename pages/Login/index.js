@@ -78,9 +78,9 @@ const handleLogin = async (event) => {
 
             <form onSubmit={handleLogin}>
               <div>
-                <lable className="text-sm font-medium leading-none text-gray-800">
+                <label className="text-sm font-medium leading-none text-gray-800">
                   Username
-                </lable>
+                </label>
                 <input
                   type="text"
                   value={username}
@@ -89,9 +89,9 @@ const handleLogin = async (event) => {
                 />
               </div>
               <div className="mt-6  w-full">
-                <lable className="text-sm font-medium leading-none text-gray-800">
+                <label className="text-sm font-medium leading-none text-gray-800">
                   Password
-                </lable>
+                </label>
                 <div className="relative flex items-center justify-center">
                   <input
                     className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2"
