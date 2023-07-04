@@ -2,17 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeInUp {
+@keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, 40px, 0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
   }
 }
-.animate-fade-in-up {
-  animation-name: fadeInUp;
-  animation-duration: 2s;
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero-text {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.bg-hero-image {
+  opacity: 0;
+  animation: fadeInImage 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
