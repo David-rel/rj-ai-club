@@ -12,7 +12,7 @@ function Contact() {
       <div className="bg-gray-800">
         <div className="container mx-auto pt-16">
           <div className="lg:flex">
-            <div className="xl:w-2/5 lg:w-2/5 bg-red-700 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
+            <div className="xl:w-2/5 lg:w-2/5 bg-blue-400 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
               <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
                 <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
                   Get in touch
@@ -173,7 +173,7 @@ function Contact() {
                   </div>
                   <button
                     type="submit"
-                    className="focus:outline-none bg-red-700 transition duration-150 ease-in-out hover:bg-red-600 rounded text-white px-8 py-3 text-sm leading-6"
+                    className="focus:outline-none bg-blue-400 transition duration-150 ease-in-out hover:bg-blue-300 rounded text-white px-8 py-3 text-sm leading-6"
                   >
                     Submit
                   </button>
