@@ -1,21 +1,19 @@
-import Sidebar from '@/components/sidebar'
-import React, { useEffect } from 'react'
+import Sidebar from "@/components/sidebar";
+import React, { useEffect } from "react";
 
-function index() {
+function Club() {
+  useEffect(() => {
+    if (localStorage.getItem("loggedIn") === "true") {
+    } else {
+      window.location.href = "/Login";
+    }
+  }, []);
 
-    useEffect(() => {
-      if (localStorage.getItem("loggedIn") === "true") {
-      } else {
-        window.location.href = "/Login";
-      }
-    }, []);
-
-    
   return (
     <div>
-        <Sidebar />
+      <Sidebar />
     </div>
-  )
+  );
 }
 
-export default index
+export default Club;
