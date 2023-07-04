@@ -20,8 +20,8 @@ export default function About() {
             Based at Regis Jesuit Highschool the AI Engineering Club works to
             create new and very interesting AI and Machine Learning Models. We
             learn about the newest features in the space and discuss about AI.
-            You don't need any past experience. Just come ready to learn about
-            the wonders of AI.
+            You don&apos;t need any past experience. Just come ready to learn
+            about the wonders of AI.
           </p>
           <Link href="/about" legacyBehavior>
             <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
@@ -80,8 +80,8 @@ export default function About() {
               <p className="mb-4 text-lg leading-relaxed">
                 We actively engage in building new AI language models and
                 chatbots. The club serves as an avenue for learning basic AI
-                development in Python and JavaScript. Whether you're an advanced
-                programmer or just getting started, this club provides
+                development in Python and JavaScript. Whether you&apos;re an
+                advanced programmer or just getting started, this club provides
                 opportunities to dive into AI.
               </p>
               <Link href="/projects" legacyBehavior>
@@ -138,7 +138,7 @@ export default function About() {
               <p className="mb-4 text-lg leading-relaxed">
                 We follow Regis Jesuit Highschool and their principles. We do
                 not use the technology we build to harm anyone and we follow
-                guidelines to help improve AI and not diminish it.{" "}
+                guidelines to help improve AI and not diminish it.
               </p>
               <Link
                 href="https://www.regisjesuit.com/mission/our-values--vision"
