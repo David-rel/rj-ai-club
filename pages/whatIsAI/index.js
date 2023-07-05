@@ -1,3 +1,4 @@
+import ChatPopup from "@/components/ChatPopup";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
@@ -141,6 +142,7 @@ function AI() {
 
 return (
   <div className="w-full min-h-screen">
+    <ChatPopup />
     <Fade triggerOnce  duration={1000}>
       <h1 className="text-5xl font-bold text-center py-10">
         Artificial Intelligence Overview

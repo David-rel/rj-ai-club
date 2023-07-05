@@ -8,3 +8,7 @@
   max-width: 10000px; /* Adjust this to change the width of the carousel */
   margin: 0 auto; /* Centers the carousel */
 }
+
+.carousel .control-arrow:before {
+  font-size: 40px;
+}

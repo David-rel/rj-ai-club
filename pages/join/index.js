@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import ChatPopup from "@/components/ChatPopup";
 
 function Contact() {
   const [email, setEmail] = useState(null);
@@ -9,6 +10,7 @@ function Contact() {
 
   return (
     <div>
+      <ChatPopup />
       <div className="bg-gray-800">
         <div className="container mx-auto pt-16">
           <div className="lg:flex">
@@ -73,7 +75,14 @@ function Contact() {
                 <br />
                 <br />
                 <p className="text-xl text-white pb-8 leading-relaxed font-normal lg:pr-4">
-                  Or click <a href="#" className="text-blue-900 underline font-bold">right here</a> to access the form to sign up for the RJ AI Club.
+                  Or click{" "}
+                  <a
+                    href="https://forms.gle/pQJpghK137AdSiN89"
+                    className="text-blue-900 underline font-bold"
+                  >
+                    right here
+                  </a>{" "}
+                  to access the form to sign up for the RJ AI Club.
                 </p>
               </div>
             </div>
@@ -82,7 +91,7 @@ function Contact() {
               <form
                 id="contact"
                 className="bg-white py-4 px-8 rounded-tr rounded-br"
-                action="https://formspree.io/f/mwkjvgze"
+                action="https://formspree.io/f/xknlwlpz"
                 method="POST"
               >
                 <h1 className="text-4xl text-gray-800 font-extrabold mb-6">

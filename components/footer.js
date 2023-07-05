@@ -86,6 +86,31 @@ function footer() {
           </div>
         </div>
         <Link href="/disclaimer">disclaimer</Link>
+        <p className="text-white">
+          Website Built by{" "}
+          <a
+            className="text-blue-600 underline"
+            href="https://www.instagram.com/_david_rel/"
+          >
+            @David-Rel
+          </a>
+          ,{" "}
+          <a
+            className="text-blue-600 underline"
+            href="https://www.buymeacoffee.com/DavidFales"
+          >
+            Buy Me a Coffee
+          </a>
+        </p>
+        <p className="text-white">
+          Like what you see and want a website built be me click{" "}
+          <a
+            className="text-blue-600 underline"
+            href="https://code-crafty-web-development.vercel.app/"
+          >
+            here
+          </a>
+        </p>
       </>
     </div>
   );

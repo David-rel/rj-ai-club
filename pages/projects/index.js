@@ -1,10 +1,12 @@
 import Image from "next/image";
 import ProjectCard from "../../components/ProjectCard";
+import ChatPopup from "@/components/ChatPopup";
 
 
 export default function Home() {
   return (
     <div>
+      <ChatPopup />
       <div className="relative bg-black text-white min-h-screen flex items-center justify-center">
         <div className="absolute inset-0 bg-hero-image">
           <Image
@@ -40,8 +42,6 @@ export default function Home() {
               description="NLP Chat Bot for Regis Jesuit Highschool."
               buttonLink="/projects/raiderBotV1"
             />
-            
-            
           </div>
         </div>
       </section>

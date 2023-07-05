@@ -7,53 +7,34 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [data, setData] = useState(null);
 
-const handleLogin = async (event) => {
-  event.preventDefault();
+  const handleLogin = async (event) => {
+    event.preventDefault();
 
-  if (data) {
-    // Check if the user with provided credentials exists
-    const user = data.find(
-      (user) =>
-        user.data.username === username && user.data.password === password
-    );
+    const response = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ username, password }),
+    });
 
-    if (user) {
+    const data = await response.json();
+
+    if (response.ok) {
       alert("login in success");
       // Store the login status and username in the local storage
       localStorage.setItem("loggedIn", true);
-      localStorage.setItem("username", username);
+      localStorage.setItem("username", data.username);
 
       // Redirect to the home page
       window.location.href = "/";
     } else {
       // Handle login error
-      alert("Invalid username or password");
+      alert(data.message);
     }
-  } else {
-    alert("No users found");
-  }
-};
+  };
 
 
-  useEffect(() => {
-    async function getAllUsers() {
-      try {
-        const response = await client.query(
-          q.Map(
-            q.Paginate(q.Documents(q.Collection("users"))),
-            q.Lambda((x) => q.Get(x))
-          )
-        );
-
-        console.log(response.data);
-        setData(response.data);
-      } catch (error) {
-        console.error("An error occurred:", error);
-      }
-    }
-
-    getAllUsers();
-  }, []);
   return (
     <div className="">
       <div className="h-full bg-gradient-to-tl from-blue-600 to-white-200 w-full py-16 px-4">

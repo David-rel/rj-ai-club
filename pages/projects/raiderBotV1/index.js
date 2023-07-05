@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import ChatPopup from "@/components/ChatPopup";
 
 export default function ProjectPage() {
   return (
     <div className="container mx-auto px-4 py-10">
+        <ChatPopup />
       {/* Back Button */}
       <Link href="/projects" legacyBehavior>
         <a className="inline-block mb-10 text-blue-500 hover:text-blue-700">

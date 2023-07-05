@@ -1,9 +1,11 @@
+import ChatPopup from "@/components/ChatPopup";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
   return (
     <div className="bg-blue-200 pb-10">
+      <ChatPopup />
       {/* Section 1 */}
       <div className="relative h-screen w-screen">
         <Image
