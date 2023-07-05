@@ -136,7 +136,7 @@ const ChatPopup = () => {
               ))
             ) : (
               <div className="w-full px-3 py-1 mb-2 text-sm text-center text-gray-500">
-                That's all I have to answer. Bye!
+                That&apos;s all I have to answer. Bye!
               </div>
             )}
           </div>
