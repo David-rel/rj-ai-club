@@ -122,7 +122,6 @@ export default function Sidebar() {
           </Link>
         </ul>{" "}
       </div>
-      <div className="flex-1 bg-gray-500">{/* Your main content */}</div>
     </div>
   );
 }

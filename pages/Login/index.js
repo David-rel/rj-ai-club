@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { client, q } from "../../utils/fauna";
+
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -33,6 +33,7 @@ export default function Login() {
       alert(data.message);
     }
   };
+
 
 
   return (

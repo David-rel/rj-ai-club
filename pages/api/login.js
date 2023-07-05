@@ -1,5 +1,6 @@
 // /api/login.js
 import { client, q } from "../../utils/fauna";
+import bcrypt from "bcrypt";
 
 export default async (req, res) => {
   if (req.method === "POST") {
@@ -13,15 +14,15 @@ export default async (req, res) => {
         )
       );
       const user = response.data[0];
-      if (user && user.data.password === password) {
-        // For actual applications, consider encrypting passwords.
-        // Here, we're assuming that they are stored in plain text.
-        // Never store passwords in plain text in production.
 
+      // compare entered password with stored hashed password
+      if (user && bcrypt.compareSync(password, user.data.password)) {
+        // password match
         res
           .status(200)
           .json({ status: "success", username: user.data.username });
       } else {
+        // password did not match
         res
           .status(401)
           .json({ status: "error", message: "Invalid username or password" });
