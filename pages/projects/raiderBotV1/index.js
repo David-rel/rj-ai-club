@@ -17,7 +17,7 @@ export default function ProjectPage() {
         {/* Image */}
         <div className="w-full md:w-1/2 px-4">
           <Image
-            src="/projects/raiderBot.png"
+            src="/projects/raiderbot.png"
             alt="title"
             width={500}
             height={500}

@@ -15,7 +15,7 @@ export default function Home() {
             quality={100}
           />
         </div>
-        <div className="hero-text z-10 opacity-0">
+        <div className="hero-text z-10 opacity-0 pl-4">
           <h1 className="text-5xl font-bold text-white underline">
             RJ AI Engineering Club Projects
           </h1>

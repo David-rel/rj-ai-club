@@ -6,8 +6,7 @@ import Header from '@/components/header';
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from 'react';
-
-
+import '@/styles/carousel.css';
 
 export default function App({ Component, pageProps }) {
     useEffect(() => {

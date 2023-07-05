@@ -1,0 +1,10 @@
+
+.carousel .slide {
+  height: 850px; /* Adjust this to change the height of the images */
+  width: 600px;
+}
+
+.carousel .carousel-slider {
+  max-width: 10000px; /* Adjust this to change the width of the carousel */
+  margin: 0 auto; /* Centers the carousel */
+}
