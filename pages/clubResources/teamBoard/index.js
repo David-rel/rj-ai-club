@@ -22,7 +22,6 @@ function KanBan() {
   };
 
   const onOptionChangeHandlerCompletion = (event) => {
-    console.log("User Selected Value - ", event.target.value);
     setCompletion(event.target.value);
   };
 
