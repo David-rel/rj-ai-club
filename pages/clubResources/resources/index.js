@@ -125,11 +125,13 @@ function Resources() {
           <ul className="list-disc list-inside text-blue-500">
             <li>
               <a href="https://teachablemachine.withgoogle.com/">
-                Google's Teachable Machine
+                Google&apos;s Teachable Machine
               </a>
             </li>
             <li>
-              <a href="https://aif360.mybluemix.net/">IBM's AI Fairness 360</a>
+              <a href="https://aif360.mybluemix.net/">
+                IBM&apos;s AI Fairness 360
+              </a>
             </li>
           </ul>
         </section>
