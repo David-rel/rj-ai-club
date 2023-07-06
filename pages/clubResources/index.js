@@ -29,7 +29,7 @@ function Club() {
         <div className="mb-4">
           <SupervisorTable data={supervisors} title="Supervisors" />
         </div>
-        <UserTable data={users} title="Users" />
+        <UserTable data={users} title="Members" />
       </div>
       <div className="w-1/2 p-4">
         <Card
