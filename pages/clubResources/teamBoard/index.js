@@ -16,6 +16,7 @@ function KanBan() {
   const [data, setData] = useState([]);
   const options = ["Markup", "Development", "Test", "Production"];
   const levels = ["To Do", "In Progress", "Done"];
+  const titles = ["Raider Bot", "Other"];
 
   const onOptionChangeHandlerLevel = (event) => {
     setLevel(event.target.value);
@@ -24,6 +25,10 @@ function KanBan() {
   const onOptionChangeHandlerCompletion = (event) => {
     setCompletion(event.target.value);
   };
+
+    const onOptionChangeHandlerTitle = (event) => {
+      setTitle(event.target.value);
+    };
 
     useEffect(() => {
       fetch("/api/getBoard")
@@ -286,11 +291,16 @@ function KanBan() {
                 </select>
                 <br />
 
-                <input
-                  placeholder="What's the Title?"
-                  className="md:w-[643px] w-full md:h-[50px] h-[50px] resize-none focus:outline-none border border-gray-300 placeholder-gray-600 py-4 px-4"
-                  onChange={(e) => setTitle(e.target.value)}
-                />
+                <select
+                  onChange={onOptionChangeHandlerTitle}
+                  class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                >
+                  <option>Title</option>
+                  {titles.map((title, index) => {
+                    return <option key={index}>{title}</option>;
+                  })}
+                </select>
+                <br />
 
                 <br />
                 <textarea

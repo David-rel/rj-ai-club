@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Production({ post }) {
+function Test({ post }) {
   const [showEditModal, setEditShowModal] = React.useState(false);
   const [completion, setCompletion] = useState(post.data.completion);
   const [level, setLevel] = useState(post.data.level);
@@ -8,6 +8,7 @@ function Production({ post }) {
   const [title, setTitle] = useState(post.data.title);
   const options = ["Markup", "Development", "Test", "Production"];
   const levels = ["To Do", "In Progress", "Done"];
+  const titles = ["Raider Bot", "Other"];
 
   const onOptionChangeHandlerLevel = (event) => {
     setLevel(event.target.value);
@@ -15,6 +16,10 @@ function Production({ post }) {
 
   const onOptionChangeHandlerCompletion = (event) => {
     setCompletion(event.target.value);
+  };
+
+  const onOptionChangeHandlerTitle = (event) => {
+    setTitle(event.target.value);
   };
 
   const deleteBoard = (id) => {
@@ -173,14 +178,17 @@ function Production({ post }) {
                       })}
                     </select>
                     <br />
-                    <input
-                      placeholder="What's the new Title?"
-                      value={title}
-                      className="md:w-[643px] w-full md:h-[50px] h-[50px] resize-none focus:outline-none border border-gray-300 placeholder-gray-600 py-4 px-4"
-                      onChange={(e) => setTitle(e.target.value)}
-                    />
-
+                    <select
+                      onChange={onOptionChangeHandlerTitle}
+                      class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    >
+                      <option>{post.data.title}</option>
+                      {titles.map((title, index) => {
+                        return <option key={index}>{title}</option>;
+                      })}
+                    </select>
                     <br />
+
                     <textarea
                       className="md:w-[643px] w-full md:h-[208px] h-[340px] resize-none focus:outline-none border border-gray-300 placeholder-gray-600 py-4 px-4"
                       placeholder="What's the New Task?"
@@ -233,4 +241,4 @@ function Production({ post }) {
   }
 }
 
-export default Production;
+export default Test;
