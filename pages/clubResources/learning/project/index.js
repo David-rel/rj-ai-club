@@ -13,13 +13,11 @@ export default function Submit() {
     }
   }, []);
 
-
   const handleCodeChange = (event) => {
     setCode(event.target.value);
   };
 
   async function submitProjectResult() {
-
     try {
       const res = await fetch("/api/submit", {
         method: "POST",
@@ -38,6 +36,8 @@ export default function Submit() {
     } catch (err) {
       console.error("Failed to submit quiz result:", err);
       return { success: false };
+    } finally {
+      alert("submitted");
     }
   }
 

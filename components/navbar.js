@@ -95,7 +95,7 @@ const Sidebar = ({ isOpen, close }) => {
         </Link>
       </div>
       <br />
-      <div className="flex items-center">
+      <div className="flex items-center font-kanit">
         {!isLoggedIn ? (
           <Link
             href="/Login"

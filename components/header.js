@@ -41,11 +41,11 @@ const Header = () => {
             </Link>
           </p>
         </div>
-        <div className="flex items-center hidden md:block">
+        <div className="items-center hidden md:block font-kanit">
           {!isLoggedIn ? (
             <Link
               href="/Login"
-              className="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline"
+              className="text-lg font-medium text-blue-600 dark:text-blue-500 hover:underline "
             >
               Login
             </Link>
