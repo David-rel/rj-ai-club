@@ -15,10 +15,10 @@ export default function About() {
           alt="AI Ethics Discussions"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white space-x-4">
-          <h1 className="text-4xl mb-4">
+          <h1 className="text-4xl mb-4 font-kanit">
             We are the Regis Jesuit AI Engineering Club
           </h1>
-          <p className="text-xl mb-4 leading-relaxed">
+          <p className="text-xl mb-4 leading-relaxed font-maven">
             Based at Regis Jesuit Highschool the AI Engineering Club works to
             create new and very interesting AI and Machine Learning Models. We
             learn about the newest features in the space and discuss about AI.
@@ -26,12 +26,12 @@ export default function About() {
             about the wonders of AI.
           </p>
           <Link href="/about" legacyBehavior>
-            <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+            <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 font-kanit">
               LEARN MORE
             </a>
           </Link>
           <Link href="/join" legacyBehavior>
-            <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
+            <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600 font-kanit">
               JOIN HERE
             </a>
           </Link>
@@ -41,7 +41,7 @@ export default function About() {
       {/* Remaining sections */}
       <div className="container mx-auto">
         {/* Sections 2 and 3 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 min-h-screen items-center bg-gray-200 p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-10 min-h-screen items-center bg-gray-200 p-4 font-kanit">
           {/* Section 2 */}
           <div className="flex flex-col items-center" data-aos="fade-right">
             <Image
@@ -52,8 +52,10 @@ export default function About() {
               className="rounded-lg"
             />
             <div className="mt-4">
-              <h2 className="text-2xl font-bold mb-2">AI Ethics Discussions</h2>
-              <p className="mb-4 text-lg leading-relaxed">
+              <h2 className="text-2xl font-bold mb-2 font-kanit">
+                AI Ethics Discussions
+              </h2>
+              <p className="mb-4 text-lg leading-relaxed font-maven">
                 We conduct discussions about AI ethics, pondering how AI should
                 be treated, and whether it should be used in schools or other
                 workplaces. These discussions are open to all members and help
@@ -61,7 +63,7 @@ export default function About() {
                 applications in the real world.
               </p>
               <Link href="/about" legacyBehavior>
-                <a className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                <a className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 font-kanit">
                   LEARN MORE
                 </a>
               </Link>
@@ -69,7 +71,10 @@ export default function About() {
           </div>
 
           {/* Section 3 */}
-          <div className="flex flex-col items-center" data-aos="fade-left">
+          <div
+            className="flex flex-col items-center font-kanit"
+            data-aos="fade-left"
+          >
             <Image
               src="/about/aidev.jpeg"
               alt="AI Development"
@@ -79,7 +84,7 @@ export default function About() {
             />
             <div className="mt-4">
               <h2 className="text-2xl font-bold mb-2">AI Development</h2>
-              <p className="mb-4 text-lg leading-relaxed">
+              <p className="mb-4 text-lg leading-relaxed font-maven">
                 We actively engage in building new AI language models and
                 chatbots. The club serves as an avenue for learning basic AI
                 development in Python and JavaScript. Whether you&apos;re an
@@ -106,11 +111,11 @@ export default function About() {
               height={300}
               className="rounded-lg"
             />
-            <div className="mt-4">
+            <div className="mt-4 font-kanit">
               <h2 className="text-2xl font-bold mb-2">
                 Learning Opportunities
               </h2>
-              <p className="mb-4 text-lg leading-relaxed">
+              <p className="mb-4 text-lg leading-relaxed font-maven">
                 We offer learning opportunities in Python, JavaScript, and
                 various Python packages for AI. Our club promotes an inclusive
                 environment where anyone, regardless of their previous coding
@@ -125,7 +130,10 @@ export default function About() {
           </div>
 
           {/* Section 5 */}
-          <div className="flex flex-col items-center" data-aos="fade-left">
+          <div
+            className="flex flex-col items-center font-kanit"
+            data-aos="fade-left"
+          >
             <Image
               src="/about/rj.png"
               alt="Regis Jesuit Honor Code"
@@ -137,7 +145,7 @@ export default function About() {
               <h2 className="text-2xl font-bold mb-2">
                 Regis Jesuit Principles
               </h2>
-              <p className="mb-4 text-lg leading-relaxed">
+              <p className="mb-4 text-lg leading-relaxed font-maven">
                 We follow Regis Jesuit Highschool and their principles. We do
                 not use the technology we build to harm anyone and we follow
                 guidelines to help improve AI and not diminish it.

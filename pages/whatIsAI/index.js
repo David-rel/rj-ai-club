@@ -140,10 +140,10 @@ function AI() {
     },
   ];
 
-    return (
+  return (
     <div className="w-full min-h-screen">
       <ChatPopup />
-      <Fade triggerOnce  duration={1000}>
+      <Fade triggerOnce duration={1000}>
         <h1 className="text-5xl font-bold text-center py-10">
           Artificial Intelligence Overview
         </h1>
@@ -151,13 +151,17 @@ function AI() {
       {sections.map((section, index) => (
         <Fade triggerOnce key={index} duration={2000}>
           <section
-            className={`flex flex-col md:items-center md:justify-between w-full min-h-screen bg-${
-              index % 2 === 0 ? "gray-200" : index % 3 === 0 ? "gray-100" : "white"
-            } p-10 md:${index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row'}`}
+            className={`flex flex-col md:items-center md:justify-between w-full min-h-screen font-kanit bg-${
+              index % 2 === 0
+                ? "gray-200"
+                : index % 3 === 0
+                ? "gray-100"
+                : "white"
+            } p-10 ${index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
           >
             <div className="max-w-xl w-full md:w-1/2 mb-4 md:mb-0">
-              <h2 className="text-3xl font-bold mb-4 p-4">{section.title}</h2>
-              <p className="text-xl text-gray-600 p-4">{section.text}</p>
+              <h2 className="text-3xl font-bold mb-4">{section.title}</h2>
+              <p className="text-xl text-gray-600 font-maven">{section.text}</p>
             </div>
             <div className="w-full md:w-1/2">
               {section.image ? (

@@ -13,7 +13,7 @@ function Contact() {
       <ChatPopup />
       <div className="bg-gray-800">
         <div className="container mx-auto pt-16">
-          <div className="lg:flex">
+          <div className="lg:flex font-kanit">
             <div className="xl:w-2/5 lg:w-2/5 bg-blue-400 py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
               <div className="xl:w-5/6 xl:px-0 px-8 mx-auto">
                 <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
@@ -64,7 +64,7 @@ function Contact() {
                       <polyline points="3 7 12 13 21 7" />
                     </svg>
                   </div>
-                  <p className="pl-4 text-white text-base text-lg">
+                  <p className="pl-4 text-white text-lg">
                     swagner@regisjesuit.com
                   </p>
                 </div>

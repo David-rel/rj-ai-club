@@ -105,18 +105,18 @@ const PrevArrow = (props) => {
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div class="max-w-xl text-center sm:text-left">
-            <h1 class="text-4xl font-extrabold sm:text-7xl animate-fadeIn">
+            <h1 class="text-4xl font-extrabold sm:text-7xl animate-fadeIn font-kanit">
               Regis Jesuit Highschool
               <strong class="block font-extrabold text-blue-600">
                 AI Engineering
               </strong>
             </h1>
 
-            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed animate-fadeIn">
+            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed animate-fadeIn font-kanit">
               Welcome to the Regis Jesuit AI Engineering Club
             </p>
 
-            <div class="mt-8 flex flex-wrap gap-4 text-center">
+            <div class="mt-8 flex flex-wrap gap-4 text-center font-kanit">
               <Link href="/about" legacyBehavior>
                 <a class="block w-full rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-400 focus:outline-none focus:ring-0 active:bg-blue-500 sm:w-auto animate-fadeIn">
                   LEARN MORE
@@ -147,10 +147,10 @@ const PrevArrow = (props) => {
                 />
               </div>
 
-              <h2 className="text-xl font-bold">{section.title}</h2>
-              <p className="text-sm">{section.description}</p>
+              <h2 className="text-3xl font-bold font-kanit">{section.title}</h2>
+              <p className=" font-maven text-xl">{section.description}</p>
               <Link href={section.path} legacyBehavior>
-                <a className="inline-block bg-blue-500 rounded px-8 py-2 text-white hover:bg-blue-600 active:bg-blue-700">
+                <a className="inline-block bg-blue-500 rounded px-8 py-2 text-white hover:bg-blue-600 active:bg-blue-700 font-kanit">
                   {section.button}
                 </a>
               </Link>

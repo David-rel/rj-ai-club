@@ -21,6 +21,10 @@ module.exports = {
           "100%": { opacity: "1" },
         },
       },
+      fontFamily: {
+        kanit: ["Kanit", "sans-serif"],
+        maven: ["Maven", "sans-serif"],
+      },
     },
   },
   plugins: [

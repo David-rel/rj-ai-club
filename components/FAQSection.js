@@ -41,7 +41,7 @@ function FAQSection() {
 
   return (
     <section className="mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:px-8">
-      <h2 className="text-2xl font-bold text-center mb-8">FAQs</h2>
+      <h2 className="text-3xl font-bold text-center mb-8 font-kanit">FAQs</h2>
       <div className="space-y-6">
         {FAQs.map((faq, index) => (
           <div
@@ -49,8 +49,10 @@ function FAQSection() {
             className="bg-white p-4 rounded shadow cursor-pointer"
             onClick={() => handleQuestionClick(index)}
           >
-            <p className="font-bold">{faq.question}</p>
-            {activeIndex === index && <p className="mt-2">{faq.answer}</p>}
+            <p className="font-bold font-kanit">{faq.question}</p>
+            {activeIndex === index && (
+              <p className="mt-2 font-maven">{faq.answer}</p>
+            )}
           </div>
         ))}
       </div>

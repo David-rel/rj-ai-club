@@ -43,12 +43,12 @@ const Sidebar = ({ isOpen, close }) => {
       } z-30 w-56 px-4 sm:px-6 overflow-auto bg-gray-800 text-white`}
     >
       <div className="flex items-center justify-between py-4">
-        <h1 className="text-2xl">Navigation</h1>
+        <h1 className="text-2xl font-kanit">Navigation</h1>
         <button onClick={close} className="text-white">
           &#x2715;
         </button>
       </div>
-      <div className="flex flex-col items-start">
+      <div className="flex flex-col items-start font-kanit">
         <Link href="/" legacyBehavior>
           <button onClick={close}>
             <a className="block px-2 py-1 text-white hover:text-blue-500">
@@ -139,7 +139,7 @@ const Navbar = () => {
     }, []);
 
   return (
-    <nav className="bg-gray-700">
+    <nav className="bg-gray-700 font-kanit text-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">

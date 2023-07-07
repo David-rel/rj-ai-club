@@ -29,13 +29,13 @@ const Header = () => {
             width={50}
             height={100}
           />
-          <h1 className="text-xl font-bold  sm:block text-white">
+          <h1 className="text-xl font-bold  sm:block text-white font-kanit">
             <Link href="https://www.regisjesuit.com/">
               RJHS AI Engineering Club
             </Link>
           </h1>
 
-          <p className="ml-4 text-sm hidden lg:block text-white">
+          <p className="ml-4 text-sm hidden lg:block text-white font-maven">
             <Link href="https://www.google.com/maps/place/6300+S+Lewiston+Way,+Aurora,+CO+80016/@39.6011631,-104.8005882,17z/data=!3m1!4b1!4m5!3m4!1s0x876c88d4a3602fc3:0x4e5549fd92d581c!8m2!3d39.601159!4d-104.7983995">
               6400 S Lewiston Way, Aurora, CO 80016
             </Link>
@@ -50,11 +50,11 @@ const Header = () => {
               Login
             </Link>
           ) : (
-            <div className="rounded-f text-white flex pr-1">
+            <div className="rounded-f text-white flex pr-1 font-kanit text-lg">
               Hello, {localStorage.getItem("username")}
               <div className="pl-3">
                 <button
-                  className="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                  className="text-md font-medium text-blue-600 dark:text-blue-500 hover:underline"
                   onClick={() => logout()}
                 >
                   Sign Out

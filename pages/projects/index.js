@@ -17,11 +17,11 @@ export default function Home() {
             quality={100}
           />
         </div>
-        <div className="hero-text z-10 opacity-0 pl-4">
+        <div className="hero-text z-10 opacity-0 pl-4 font-kanit">
           <h1 className="text-5xl font-bold text-white underline">
             RJ AI Engineering Club Projects
           </h1>
-          <h2 className="text-2xl mt-4 text-white">
+          <h2 className="text-2xl mt-4 text-white font-maven">
             We are currently planning and working on many very interesting and
             fun projects in the future. Scroll down to check them out.
           </h2>
@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       {/* Projects in Progress Section */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-20 font-kanit">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-10">
             Projects in Progress
@@ -47,7 +47,7 @@ export default function Home() {
       </section>
 
       {/* Upcoming Projects Section */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50 py-20 font-kanit">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-10">
             Upcoming Projects
