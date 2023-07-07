@@ -22,16 +22,16 @@ function Test() {
 
             <h2 className="font-bold text-2xl pb-4">
               After all three have been successfully downloaded. Go into your
-              terminal and run the command "jupyter notebook". then you will see
-              a lot of words pop up afterwards, wait until you got automatically
-              redirected to localhost:8888/tree.
+              terminal and run the command &quot;jupyter notebook&quot;. then
+              you will see a lot of words pop up afterwards, wait until you got
+              automatically redirected to localhost:8888/tree.
             </h2>
 
             <h2 className="font-bold text-2xl">
               You have successfully done the setup portion for python and
               Machine Learning. If you need to download any other libraries in
-              the future run this command in your terminal "pip install
-              LibraryName". You can now stop your terminal and close out of
+              the future run this command in your terminal &quot;pip install
+              LibraryName&quot;. You can now stop your terminal and close out of
               jupyter notebook.
             </h2>
           </div>
@@ -65,9 +65,9 @@ function Test() {
             </h2>
 
             <h2 className="font-bold text-2xl">
-              TIP: you don't need to know everything. don't get down on yourself
-              if something seems confusing in this video. Just keep going and
-              learning.
+              TIP: you don&apos;t need to know everything. don&apos;t get down on
+              yourself if something seems confusing in this video. Just keep
+              going and learning.
             </h2>
 
             <iframe
