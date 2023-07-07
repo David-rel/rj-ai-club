@@ -27,7 +27,7 @@ export default function About() {
           </p>
           <Link href="/about" legacyBehavior>
             <a className="inline-block px-6 py-3 bg-blue-500 text-white rounded hover:bg-blue-600">
-              Learn More
+              LEARN MORE
             </a>
           </Link>
           <Link href="/join" legacyBehavior>
@@ -62,7 +62,7 @@ export default function About() {
               </p>
               <Link href="/about" legacyBehavior>
                 <a className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                  Learn More
+                  LEARN MORE
                 </a>
               </Link>
             </div>
@@ -88,7 +88,7 @@ export default function About() {
               </p>
               <Link href="/projects" legacyBehavior>
                 <a className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                  See Our Projects
+                  OUR PROJECTS
                 </a>
               </Link>
             </div>
@@ -147,7 +147,7 @@ export default function About() {
                 legacyBehavior
               >
                 <a className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                  More about Regis
+                  GOTO REGIS
                 </a>
               </Link>
             </div>

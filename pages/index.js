@@ -105,25 +105,25 @@ const PrevArrow = (props) => {
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div class="max-w-xl text-center sm:text-left">
-            <h1 class="text-4xl font-extrabold sm:text-7xl">
+            <h1 class="text-4xl font-extrabold sm:text-7xl animate-fadeIn">
               Regis Jesuit Highschool
               <strong class="block font-extrabold text-blue-600">
                 AI Engineering
               </strong>
             </h1>
 
-            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed animate-fadeIn">
               Welcome to the Regis Jesuit AI Engineering Club
             </p>
 
             <div class="mt-8 flex flex-wrap gap-4 text-center">
               <Link href="/about" legacyBehavior>
-                <a class="block w-full rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-400 focus:outline-none focus:ring-0 active:bg-blue-500 sm:w-auto">
+                <a class="block w-full rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-400 focus:outline-none focus:ring-0 active:bg-blue-500 sm:w-auto animate-fadeIn">
                   LEARN MORE
                 </a>
               </Link>
               <Link href="/join" legacyBehavior>
-                <a class="block w-full rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-400 focus:outline-none focus:ring-0 active:bg-blue-500 sm:w-auto">
+                <a class="block w-full rounded bg-blue-500 px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-400 focus:outline-none focus:ring-0 active:bg-blue-500 sm:w-auto animate-fadeIn">
                   JOIN HERE
                 </a>
               </Link>

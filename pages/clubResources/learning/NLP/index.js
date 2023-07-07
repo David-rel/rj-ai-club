@@ -48,7 +48,7 @@ export default function NLPPage() {
         imgSrc="/NLP/NLP 4.svg"
       />
 
-      <section className="pl-8 pb-8">
+      <section className="p-8">
         <h1 className="text-3xl font-bold pt-8">
           Here a couple videos to get you started with NLPs
         </h1>
@@ -63,38 +63,38 @@ export default function NLPPage() {
           <h1 className="text-green-500 underline text-3xl font-semibold">
             Beginner
           </h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/t1EKO78idoI"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            className="pb-8"
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/KVxIx8f_VpM"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            className="pb-8"
-          ></iframe>
+          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/t1EKO78idoI"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/KVxIx8f_VpM"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
         </div>
         <div className="pb-8">
           <h1 className="text-blue-500 underline text-3xl font-semibold">
             Intermediate
           </h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ciPOWwJNRlk"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            className="pb-8"
-          ></iframe>
+          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/ciPOWwJNRlk"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
           <Link
             href="https://www.youtube.com/playlist?list=PLQY2H8rRoyvzDbLUZkbudP-MFQZwNmU4S"
             className="text-blue-600 underline text-5xl"
@@ -106,15 +106,15 @@ export default function NLPPage() {
           <h1 className="text-red-500 underline text-3xl font-semibold">
             Master
           </h1>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/kCc8FmEb1nY"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen="true"
-            className="pb-8"
-          ></iframe>
+          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/kCc8FmEb1nY"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
           <Link
             href="https://www.youtube.com/playlist?list=PLeo1K3hjS3uuvuAXhYjV2lMEShq2UYSwX"
             className="text-blue-600 underline text-5xl"

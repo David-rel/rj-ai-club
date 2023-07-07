@@ -24,17 +24,17 @@ function Club() {
   const supervisors = usersData.filter((user) => user.role === "supervisor");
 
   return (
-    <div className="flex">
+    <div className="flex flex-col md:flex-row">
       <Sidebar />
-      <div>
-        <div className="flex flex-row">
-          <div className="w-1/2 p-4">
+      <div className="w-full">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 p-4">
             <div className="mb-4">
               <SupervisorTable data={supervisors} title="Supervisors" />
             </div>
             <UserTable data={users} title="Members" />
           </div>
-          <div className="w-1/2 p-4">
+          <div className="w-full md:w-1/2 p-4">
             <Card
               title="Club Resources"
               description="This is where you can find some club resources like docs, videos, chats, etc..."
@@ -57,7 +57,7 @@ function Club() {
             />
           </div>
         </div>
-        <div>
+        <div className="w-full">
           <ProjectSection />
         </div>
       </div>

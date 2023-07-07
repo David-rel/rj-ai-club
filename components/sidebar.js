@@ -17,7 +17,7 @@ export default function Sidebar() {
   };
 
   return (
-    <div className="relative flex h-screen">
+    <div className="relative">
       {!isSidebarOpen && (
         <button
           className="md:hidden fixed top-4 left-4 z-10 p-4 bg-black text-white opacity-80 rounded mt-14"
@@ -42,7 +42,7 @@ export default function Sidebar() {
       )}
 
       <div
-        className={`fixed inset-y-0 z-10 flex flex-col transition-all duration-300 ease-in-out ${
+        className={`fixed inset-y-0 h-screen z-10 flex flex-col transition-all duration-300 ease-in-out ${
           isSidebarOpen ? "bg-gray-700 left-0" : "-left-64"
         } md:bg-gray-700 border border-black md:static md:z-0 md:left-auto md:w-48 `}
       >

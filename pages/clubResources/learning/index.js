@@ -4,9 +4,9 @@ import React from "react";
 
 function Test() {
   return (
-    <div className="flex pb-12">
+    <div className="flex flex-col md:flex-row pb-12 pr-8">
       <Sidebar />
-      <div>
+      <div className="w-full md:pl-8">
         <div className="pl-8">
           <h1 className="text-4xl font-bold p-4 text-black underline pb-4">
             Setting up the Environment for Programming
@@ -47,15 +47,15 @@ function Test() {
               1. Start with this 1 hour long video to get you started with the
               basics
             </h2>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/kqtD5dpn9C8"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="true"
-              className="pb-8"
-            ></iframe>
+            <div className="aspect-w-16 aspect-h-20 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/kqtD5dpn9C8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
 
             <h2 className="font-bold text-2xl">
               2. Then move onto a more in depth video where you can completely
@@ -65,20 +65,20 @@ function Test() {
             </h2>
 
             <h2 className="font-bold text-2xl">
-              TIP: you don&apos;t need to know everything. don&apos;t get down on
-              yourself if something seems confusing in this video. Just keep
+              TIP: you don&apos;t need to know everything. don&apos;t get down
+              on yourself if something seems confusing in this video. Just keep
               going and learning.
             </h2>
 
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eWRfhZUzrAc"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="true"
-              className="pb-8"
-            ></iframe>
+            <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/eWRfhZUzrAc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
 
             <h2 className="font-bold text-2xl">
               3. You have 2 options.
@@ -140,15 +140,15 @@ function Test() {
               There is a great video that runs through a quick tutorial of bow
               to build an AI in under 1 hour
             </h2>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7eh4d6sabA0"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen="true"
-              className="pb-8"
-            ></iframe>
+            <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg shadow-md bg-white mb-8">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/7eh4d6sabA0"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen="true"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
