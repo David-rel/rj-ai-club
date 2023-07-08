@@ -6,9 +6,12 @@ import Card from "@/components/Card";
 import ProjectSection from "@/components/ProjectSection";
 
 function Club() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   useEffect(() => {
     if (localStorage.getItem("loggedIn") !== "true") {
       window.location.href = "/Login";
+    } else {
+      setIsLoggedIn(true)
     }
   }, []);
 
@@ -23,7 +26,7 @@ function Club() {
   const users = usersData.filter((user) => user.role === "user");
   const supervisors = usersData.filter((user) => user.role === "supervisor");
 
-  if (localStorage.getItem("loggedIn") === "true") {
+  if (isLoggedIn) {
     return (
       <div className="flex flex-col md:flex-row">
         <Sidebar />
