@@ -106,7 +106,7 @@ function footer() {
           Like what you see and want a website built be me click{" "}
           <a
             className="text-blue-600 underline"
-            href="https://code-crafty-web-development.vercel.app/"
+            href="https://codecrafty.dev"
           >
             here
           </a>
